@@ -1,0 +1,65 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.github.jengelman.gradle.plugins:shadow:1.1.1'
+  }
+  dependencies {
+    classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:0.5'
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'idea'
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.bintray'
+
+allprojects {
+
+  sourceCompatibility = 1.7
+  targetCompatibility = 1.7
+
+  repositories {
+    jcenter()
+    mavenCentral()
+  }
+  //noinspection GroovyAssignabilityCheck
+  configurations.all {
+    resolutionStrategy {
+    }
+  }
+  idea {
+    module {
+      downloadSources = true
+      downloadJavadoc = true
+    }
+  }
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.0'
+}
+
+
+dependencies {
+  compile 'com.github.jjagged:metrics-statsd:1.0.0'
+  compile 'io.dropwizard:dropwizard-core:0.7.1'
+  compile 'io.dropwizard:dropwizard-metrics:0.7.1'
+}
+
+
+shadowJar {
+  exclude 'META-INF/*.DSA'
+  exclude 'META-INF/*.RSA'
+
+  mergeServiceFiles {
+    include 'META-INF/services/*'
+  }
+}
