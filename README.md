@@ -24,7 +24,7 @@ add `http://dl.bintray.com/dehora/maven` to your dependencies. For example in Gr
 
 ```groovy
 repositories {
-  maven { url 'http://dl.bintray.com/dehora/maven' }
+ jcenter()
 }
 
 dependencies { 
@@ -39,8 +39,8 @@ and maven
   ...
   <repositories>
     <repository>
-      <id>bintray-dehora</id>
-      <url>http://dl.bintray.com/dehora/maven</url>
+      <id>jcenter</id>
+      <url>http://jcenter.bintray.com</url>
     </repository>
   </repositories>
   ...
