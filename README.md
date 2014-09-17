@@ -19,8 +19,7 @@ metrics:
 
 ### Add a dependency
 
-The distribution is hosted on [bintray](https://bintray.com/dehora/maven/dropwizard-statsd/view). To use the reporter, 
-add `http://dl.bintray.com/dehora/maven` to your dependencies. For example in Gradle - 
+The distribution is hosted on [bintray](https://bintray.com/dehora/maven/dropwizard-statsd/view). To use the reporter,add jcenter to your dependencies. For example in Gradle - 
 
 ```groovy
 repositories {
