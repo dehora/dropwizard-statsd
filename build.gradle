@@ -39,7 +39,7 @@ allprojects {
     pkg {
       repo = 'maven'
       name = 'dropwizard-statsd'
-      desc = 'a statsd recorder factory for dropwizard 0.7'
+      desc = 'a statsd recorder factory for dropwizard'
       websiteUrl = 'https://github.com/dehora/dropwizard-statsd'
       issueTrackerUrl = 'https://github.com/dehora/dropwizard-statsd/issues'
       vcsUrl = 'https://github.com/dehora/dropwizard-statsd.git'
@@ -62,7 +62,7 @@ subprojects {
       published
     }
     dependencies {
-      testCompile 'junit:junit:4.7'
+      testCompile 'junit:junit:4.11'
     }
     task sourceJar(type: Jar) {
       from sourceSets.main.allSource

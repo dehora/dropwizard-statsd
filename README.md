@@ -1,6 +1,6 @@
 ## dropwizard-statsd
 
-A Dropwizard 0.7 ReporterFactory that wraps [jjagged/metrics-statsd](https://github.com/jjagged/metrics-statsd). 
+A Dropwizard ReporterFactory that wraps [jjagged/metrics-statsd](https://github.com/jjagged/metrics-statsd). 
 
 ### Adding a reporter
 
@@ -18,6 +18,13 @@ metrics:
 
 
 ### Add a dependency
+
+There are 2 releases of this JAR, one that brings in dropwizard:0.7.1 dependencies and one that brings in dropwizard:0.8.1 dependencies.  Pick the version of this JAR appropriate to your Dropwizard project:
+
+| dropwizard-statsd version | dropwizard-version |
+|---------------------------|--------------------|
+| 0.0.0                     | 0.7.1              |
+| 0.8.1                     | 0.8.1              |
 
 The distribution is hosted on [bintray](https://bintray.com/dehora/maven/dropwizard-statsd/view). To use the reporter,add jcenter to your dependencies. For example in Gradle - 
 
