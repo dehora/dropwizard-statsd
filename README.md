@@ -34,7 +34,7 @@ repositories {
 }
 
 dependencies { 
- compile 'net.dehora.dropwizard:dropwizard-statsd:0.0.0'
+ compile 'net.dehora.dropwizard:dropwizard-statsd:0.8.1'
 }  
 ```
 
@@ -54,7 +54,7 @@ and maven
     <dependency>
         <groupId>net.dehora.dropwizard</groupId>
         <artifactId>dropwizard-statsd</artifactId>
-        <version>0.0.0</version>
+        <version>0.8.1</version>
     </dependency>
   </dependencies>
   ...
