@@ -19,12 +19,13 @@ metrics:
 
 ### Add a dependency
 
-There are 2 releases of this JAR, one that brings in dropwizard:0.7.1 dependencies and one that brings in dropwizard:0.8.1 dependencies.  Pick the version of this JAR appropriate to your Dropwizard project:
+There are 3 releases of this JAR, one that brings in dropwizard:0.7.1, one for dropwizard:0.8.1 and one for dropwizard:0.9.1.  Pick the version of this JAR appropriate to your Dropwizard project:
 
 | dropwizard-statsd version | dropwizard-version |
 |---------------------------|--------------------|
 | 0.0.0                     | 0.7.1              |
 | 0.8.1                     | 0.8.1              |
+| 0.9.1                     | 0.9.1              |
 
 The distribution is hosted on [bintray](https://bintray.com/dehora/maven/dropwizard-statsd/view). To use the reporter,add jcenter to your dependencies. For example in Gradle - 
 

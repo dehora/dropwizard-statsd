@@ -1,6 +1,6 @@
 dependencies {
   compile 'com.github.jjagged:metrics-statsd:1.0.0'
-  compile 'io.dropwizard:dropwizard-core:0.8.1'
-  compile 'io.dropwizard:dropwizard-metrics:0.8.1'
-  testCompile 'junit:junit:4.11'
+  compile 'io.dropwizard:dropwizard-core:0.9.1'
+  compile 'io.dropwizard:dropwizard-metrics:0.9.1'
+  testCompile 'junit:junit:4.12'
 }
