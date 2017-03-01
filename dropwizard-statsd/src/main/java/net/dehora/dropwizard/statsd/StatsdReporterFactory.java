@@ -79,7 +79,7 @@ public class StatsdReporterFactory extends BaseReporterFactory {
             .prefixedWith(getPrefix())
             .withTags(getTags().toArray(new String[getTags().size()]))
             .convertRatesTo(TimeUnit.SECONDS)
-            .convertDurationsTo(TimeUnit.MILLISECONDS).filter(MetricFilter.ALL)
+            .convertDurationsTo(TimeUnit.MILLISECONDS).filter(getFilter())
             .build(statsd);
         logger.info("registering StatsdReporterFactory "+reporter);
         return reporter;
